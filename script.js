@@ -22,7 +22,7 @@ function tryIt(item) {
       let movieCard = document.createElement("div");
       innerCardHtml = `
             <div class="card">
-            <div class="img-div">
+            <div class="img-div show-on-scroll">
               <img
                 class="img-class"
                 src="${data.Poster}"
@@ -71,3 +71,9 @@ searchBar.addEventListener("input", function () {
   movieCardsDiv.innerHTML = ``;
   tryIt(searchBar.value);
 });
+
+
+
+
+
+

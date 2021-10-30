@@ -7,7 +7,11 @@
 body {
   font-size: 16px;
 }
-
+a {
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Akaya Kanadaka";
+}
 .header {
   width: full;
   height: 2rem;
@@ -60,13 +64,11 @@ input {
   padding: 1rem;
   margin: 3rem;
   font-family: "Akaya Kanadaka";
-  background:linear-gradient();
-
-  
+  background: linear-gradient();
 }
 
-.card.is-visible{
-    opacity: 1 ;
+.card.is-visible {
+  opacity: 1;
   transform: rotateY(-2deg);
 }
 .img-class {
@@ -110,3 +112,4 @@ img {
 .movie-reviews {
   margin: 5px;
 }
+
