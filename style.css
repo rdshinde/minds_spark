@@ -30,10 +30,12 @@ input {
   padding: 1rem;
   margin: auto;
   margin-top: 2rem;
-  border: 3px solid black;
+  border: 3px solid rgb(238, 234, 234);
   width: 320px;
   font-size: large;
   font-family: "Akaya Kanadaka";
+  border-radius: 10px;
+  box-shadow: 2px 1px#dbdada;
 }
 
 .movie-cards {
@@ -58,6 +60,17 @@ input {
   padding: 1rem;
   margin: 3rem;
   font-family: "Akaya Kanadaka";
+  background:linear-gradient();
+
+  opacity: 0;
+  transform: translateY(2rem)rotateZ(3deg);
+  transition: transform 3s .20s cubic-bezier(0,1,0.3,1),  opacity .3s .20s ease-out  ;
+  will-change: transform, opacity;
+}
+
+.card.is-visible{
+    opacity: 1 ;
+  transform: rotateY(-2deg);
 }
 .img-class {
   margin: auto;
