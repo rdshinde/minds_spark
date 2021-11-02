@@ -48,7 +48,7 @@ input {
   height: 100vh;
   background-color: white;
   margin: 3rem;
-
+  
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -65,6 +65,7 @@ input {
   margin: 3rem;
   font-family: "Akaya Kanadaka";
   background: linear-gradient();
+  
 }
 
 .card.is-visible {

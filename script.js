@@ -19,7 +19,7 @@ function tryIt(item) {
     dataType: "JSON",
   })
     .done(function (data) {
-      let movieCard = document.createElement("div");
+      let movieCard = document.createElement("article");
       innerCardHtml = `
             <div class="card">
             <div class="img-div show-on-scroll">
@@ -38,18 +38,27 @@ function tryIt(item) {
               <div class="rating-div">
                 <i class="fas fa-star-half-alt"></i><h4 class="movie-reviews">${data.imdbRating}</h4>
               </div>
-              <h4 class="movie-genre">${data.Genre}</h4>
+              <h4 class="movie-genre"><span>Genres:</span>
+              ${data.Genre}</h4>
               <h4 class="movie-cast">
                 ${data.Actors}
               </h4>
     
-              <h4 class="movie-overview">
-                ${data.Plot}
-              </h4>
+              
             </div>
           </div>
             `;
       movieCard.innerHTML = innerCardHtml;
+    //   const review = document.createElement("div");
+    //   review.classList.add("movie-review-div");
+    //   review.innerHTML = `<p class="movie-overview">
+    //   ${data.Plot}
+    // </p>`;
+    //   movieCard.appendChild(review);
+      
+    //   movieCard.addEventListener("mouseover",function(){
+    //     review.classList.toggle("hidden");
+    //   })
       movieCardsDiv.appendChild(movieCard);
     })
     .fail(function (data) {
@@ -71,9 +80,4 @@ searchBar.addEventListener("input", function () {
   movieCardsDiv.innerHTML = ``;
   tryIt(searchBar.value);
 });
-
-
-
-
-
 
