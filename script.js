@@ -49,16 +49,6 @@ function tryIt(item) {
           </div>
             `;
       movieCard.innerHTML = innerCardHtml;
-    //   const review = document.createElement("div");
-    //   review.classList.add("movie-review-div");
-    //   review.innerHTML = `<p class="movie-overview">
-    //   ${data.Plot}
-    // </p>`;
-    //   movieCard.appendChild(review);
-      
-    //   movieCard.addEventListener("mouseover",function(){
-    //     review.classList.toggle("hidden");
-    //   })
       movieCardsDiv.appendChild(movieCard);
     })
     .fail(function (data) {
@@ -80,4 +70,3 @@ searchBar.addEventListener("input", function () {
   movieCardsDiv.innerHTML = ``;
   tryIt(searchBar.value);
 });
-
