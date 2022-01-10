@@ -52,7 +52,7 @@ function tryIt(item) {
       movieCardsDiv.appendChild(movieCard);
     })
     .fail(function (data) {
-      console.log("fail");
+      alert("fail");
     });
 }
 function inputBlank() {
@@ -63,7 +63,7 @@ function inputBlank() {
 inputBlank();
 const searchBar = document.querySelector(".movie-name-input");
 searchBar.addEventListener("input", function () {
-  console.log(searchBar.value);
+//   console.log(searchBar.value);
   if (searchBar.value == "") {
     inputBlank();
   }
